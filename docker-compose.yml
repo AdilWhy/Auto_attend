@@ -1,0 +1,9 @@
+version: "3"
+services:
+  seleniarm:
+    image: seleniarm/standalone-chromium:latest
+    shm_size: 2gb
+    environment:
+      - SE_NODE_MAX_SESSIONS=5
+    ports:
+      - "4444:4444"
